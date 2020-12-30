@@ -1,34 +1,37 @@
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Quotes</span></a> by TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Crypto</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
   {
-  "symbols": [
+  "width": 770,
+  "height": "300",
+  "symbolsGroups": [
     {
-      "description": "BTC USDT",
-      "proName": "BINANCE:BTCUSDT"
-    },
-    {
-      "description": "BTC Dominance",
-      "proName": "CRYPTOCAP:BTC.D"
-    },
-    {
-      "description": "BTC Vix 24hr",
-      "proName": "BITMEX:BVOL24H"
-    },
-    {
-      "description": "Crypto Market Cap",
-      "proName": "CRYPTOCAP:TOTAL"
-    },
-    {
-      "description": "BTC M Market Cap",
-      "proName": "CRYPTOCAP:BTC"
+      "name": "Crypto",
+      "symbols": [
+        {
+          "name": "CRYPTOCAP:TOTAL",
+          "displayName": "Total Market Cap"
+        },
+        {
+          "name": "CRYPTOCAP:BTC.D",
+          "displayName": "Dominance"
+        },
+        {
+          "name": "CRYPTOCAP:BTC",
+          "displayName": "BTC Market Cap"
+        },
+        {
+          "name": "COINBASE:BTCUSD",
+          "displayName": "BTC Price"
+        }
+      ]
     }
   ],
+  "showSymbolLogo": true,
   "colorTheme": "dark",
   "isTransparent": true,
-  "showSymbolLogo": true,
   "locale": "en"
 }
   </script>
